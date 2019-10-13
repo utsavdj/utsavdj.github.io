@@ -602,7 +602,7 @@ footer p {
   background-image: url(../images/utsav.png);
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   width: 100%;
 }
 
