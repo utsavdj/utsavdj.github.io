@@ -1,18 +1,265 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Utsav Dhoj Joshi</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <link type="text/css" rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="css/bootstrap.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Sacramento&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/load_style.css"/>
+  <link rel="shortcut icon" href="images/logo.png"/>
+
+
+  <title>Welcome</title>
 </head>
-<body>
-<h1>Utsav Dhoj Joshi</h1>
-<img src="images/CROPPED-pp.jpg" alt="Utsav Dhoj Joshi" width="64px">
-<p>
-    Hello World! Utsav loves coding in different programming languages.
-    Please do hire Utsav if you want to make any web application or design websites.
-</p>
+
+<body style="background-color:#F7F7F7;">
+
+<div id="ip-container" class="ip-container">
+  <div class="ip-header">
+    <div class="ip-loader">
+      <svg class="ip-inner" width="60px" height="60px" viewBox="0 0 80 80">
+        <path class="ip-loader-circlebg"
+              d="M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,40.5,10z"/>
+        <path id="ip-loader-circle" class="ip-loader-circle"
+              d="M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,40.5,10z"/>
+      </svg>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <header>
+
+    <a href="#">
+      <img src="images/logo.png"/>
+      <h1>Utsav Dhoj Joshi</h1>
+    </a>
+
+    <div id="mobile-menu" onclick="clickFunction()">
+      <span class="lines"></span>
+    </div>
+
+    <nav>
+      <ul id="mobile-dropdown" class="mobile-dropdown-content">
+        <li class="active"><a href="#">Home</a></li>
+        <li id="full-border"><a href="pages/about.html">About</a></li>
+        <!--<div class="dropdown">-->
+          <!--<li><a href="#">Portfolio</a></li>-->
+          <!--<div class="dropdown-content">-->
+            <!--<div class="inner-dropdown">-->
+              <!--<a class="no-border top" href="pages/filter.html">Web Design</a>-->
+            <!--</div>-->
+            <!--<div class="inner-dropdown">-->
+              <!--<a class="no-border" href="pages/fullwidth.html">JavaScript</a>-->
+            <!--</div>-->
+            <!--<div class="inner-dropdown">-->
+              <!--<a class="no-border" href="pages/masonry2.html">Game</a>-->
+            <!--</div>-->
+            <!--<div class="inner-dropdown">-->
+              <!--<a class="no-border" href="pages/image.html">Experience</a>-->
+            <!--</div>-->
+            <!--<div class="inner-dropdown">-->
+              <!--<a class="no-border" href="pages/grid2.html">Skills</a>-->
+            <!--</div>-->
+            <!--<div class="inner-dropdown">-->
+              <!--<a class="no-border" href="pages/image.html">Education</a>-->
+            <!--</div>-->
+            <!--<div class="inner-dropdown">-->
+              <!--<a class="no-border" href="pages/mosaic1.html">Hobbies</a>-->
+            <!--</div>-->
+          <!--</div>-->
+        <!--</div>-->
+        <li><a href="pages/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+
+  </header>
+</div>
+
+<section id="push">
+  <div class="heading_content">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7 col-xs-12">
+          <h2>Great experiences leads to great <span class="unique_color">builds.</span></h2>
+          <img src="images/branding-border.png"/>
+          <p>Through self learning and experience, I have crafted some productive works that I loved working on and would
+          love to continue working on something similar.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="portfolio">
+  <div class="container">
+
+    <ul class="portfolio-sorting mid-nav">
+      <li class="active"><a href="#" data-group="all">All
+        <div class="circle"></div>
+      </a></li>
+      <li><a href="#" data-group="web-design">Web Design
+        <div class="circle"></div>
+      </a></li>
+      <li><a href="#" data-group="js">JavaScript
+        <div class="circle"></div>
+      </a></li>
+      <li><a href="#" data-group="game">Game
+        <div class="circle"></div>
+      </a></li>
+    </ul>
+
+    <ul class="portfolio-items list-unstyled all" id="grid">
+
+      <li class="col-md-4 col-sm-4 col-xs-6" data-groups='["web-design"]'>
+        <figure class="portfolio-item">
+          <a href="https://utsavdj.github.io/tutangle/" target="_blank">
+            <img src="images/tutangle-thumbnail.png" alt="TuTangle" class="img-responsive">
+            <div class="img-text">
+              <h5>Tutangle - Home Page</h5>
+              <p>Web Design, Lo-fi Wireframe, CSS2, XHTML, Responsive</p>
+            </div>
+          </a>
+        </figure>
+      </li>
+
+      <li class="col-md-4 col-sm-4 col-xs-6" data-groups='["web-design", "js"]'>
+        <figure class="portfolio-item">
+          <a href="https://utsavdj.github.io/design-template/" target="_blank">
+            <img src="images/imaginative-thumbnail.png" alt="Imaginative" class="img-responsive">
+            <div class="img-text">
+              <h5>Imaginative - Home Page with Carousel</h5>
+              <p>Web Design, Lo-fi Wireframe, CSS3, HTML5, Responsive, JS</p>
+            </div>
+          </a>
+        </figure>
+      </li>
+
+      <li class="col-md-4 col-sm-4 col-xs-6" data-groups='["web-design", "js"]'>
+        <figure class="portfolio-item">
+          <a href="https://utsavdj.github.io/trivan/" target="_blank">
+            <img src="images/drop-thumbnail.png" alt="Drop" class="img-responsive">
+            <div class="img-text">
+              <h5>Drop by Trivan98</h5>
+              <p>Web Design, CSS3, Bootstrap, HTML5, Responsive, JS, jQuery</p>
+            </div>
+          </a>
+        </figure>
+      </li>
+
+      <li class="col-md-4 col-sm-4 col-xs-6" data-groups='["js"]'>
+        <figure class="portfolio-item">
+          <a href="https://utsavdj.github.io/js-assignment/assignment-1/" target="_blank">
+            <img src="images/single-carousel-thumbnail.png" alt="Single Carousel" class="img-responsive">
+            <div class="img-text">
+              <h5>Single Carousel</h5>
+              <p>JavaScript, CSS</p>
+            </div>
+          </a>
+        </figure>
+      </li>
+
+      <li class="col-md-4 col-sm-4 col-xs-6" data-groups='["js"]'>
+        <figure class="portfolio-item">
+          <a href="https://utsavdj.github.io/js-assignment/assignment-2/" target="_blank">
+            <img src="images/multiple-carousel-thumbnail.png" alt="Multiple Carousel" class="img-responsive">
+            <div class="img-text">
+              <h5>Multiple Carousel</h5>
+              <p>JavaScript, OOP, CSS, Responsive</p>
+            </div>
+          </a>
+        </figure>
+      </li>
+
+      <li class="col-md-4 col-sm-4 col-xs-6" data-groups='["js"]'>
+        <figure class="portfolio-item">
+          <a href="https://utsavdj.github.io/js-assignment/assignment-3%20(Ball%20Collision)/" target="_blank">
+            <img src="images/ball-collision-thumbnail.png" alt="Ball Collision" class="img-responsive">
+            <div class="img-text">
+              <h5>Ball Collision</h5>
+              <p>Physics, JavaScript, ES6, OOP, CSS</p>
+            </div>
+          </a>
+        </figure>
+      </li>
+
+      <li class="col-md-4 col-sm-4 col-xs-6" data-groups='["js", "game"]'>
+        <figure class="portfolio-item">
+          <a href="https://utsavdj.github.io/js-assignment/assignment-3%20(Ant%20Smasher)/" target="_blank">
+            <img src="images/ant-smasher-thumbnail.png" alt="Ant Smasher" class="img-responsive">
+            <div class="img-text">
+              <h5>Ant Smasher</h5>
+              <p>Game, JavaScript, ES6, OOP, CSS</p>
+            </div>
+          </a>
+        </figure>
+      </li>
+
+      <li class="col-md-4 col-sm-4 col-xs-6 shuffle_sizer"></li>
+
+    </ul>
+
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <p class="logo-info">The header and footer face logo is designed by my friend Arun Gurung,
+          do checkout his other awesome works at
+          <a href="https://www.behance.net/arungurung" target="_blank">behance</a> or
+          <a href="https://dribbble.com/arungurung" target="_blank">dribble</a>.</p>
+      </div>
+      <div class="col-sm-6">
+        <img src="images/logo.png"/>
+        <p>Copyright © <span id="copyright-year"></span> Utsav Dhoj Joshi.<br/>
+          This template is made by me, which is a replica of Traivan98.</p>
+      </div>
+
+      <div class="icons">
+        <div class="col-sm-6 text-right">
+
+          <ul class="social-media">
+            <li><a href="https://www.facebook.com/utsav.joshi.58" target="_blank"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="mailto:utsavdj@gmail.com" target="_blank"><i class="fa fa-google"></i></a></li>
+            <li><a href="https://github.com/utsavdj/" target="_blank"><i class="fa fa-github"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</footer>
+
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+  var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+  (function () {
+    var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+    s1.async = true;
+    s1.src = 'https://embed.tawk.to/586b7377e6ab3b03d09902c6/default';
+    s1.charset = 'UTF-8';
+    s1.setAttribute('crossorigin', '*');
+    s0.parentNode.insertBefore(s1, s0);
+  })();
+</script>
+<!--End of Tawk.to Script-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery-latest.js"></script>
+<script src="js/jquery.shuffle.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/classie.js"></script>
+<script src="js/pathLoader.js"></script>
+<script src="js/load_script.js"></script>
+
+
 </body>
 </html>
