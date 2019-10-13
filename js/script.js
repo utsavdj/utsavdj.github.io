@@ -132,6 +132,17 @@ $(function () {
   }
 });
 
+if(educationElement) {
+  window.onresize = function () {
+    if (window.innerWidth < 414) {
+      $.stellar({
+        horizontalOffset: 350,
+        verticalOffset: -548.5
+      });
+    }
+  };
+}
+
 $("#mobile-menu").on("click", function () {
   $(this).toggleClass("active");
 });

@@ -1263,7 +1263,7 @@ footer p {
 
 @media screen and (max-width: 448px) {
   .heading_content h2, .education h2, .skills h2, .interests h2{
-    font-size: 60px;
+    font-size: 50px;
   }
 }
 
