@@ -123,54 +123,78 @@ $(document).ready(function () {
   });
 });
 
-$(function () {
-  if(educationElement) {
-    if (window.innerWidth > 1024) {
-      $.stellar({
-        horizontalOffset: 350,
-        verticalOffset: -28,
-        responsive: true
-      });
-    }
-    if (window.innerWidth > 768 && window.innerWidth <= 1024) {
-      $.stellar({
-        horizontalOffset: 2000,
-        verticalOffset: 900,
-        responsive: true
-      });
-    }
-    if (window.innerWidth > 414 && window.innerWidth <= 768) {
-      $.stellar({
-        horizontalOffset: 1500,
-        verticalOffset: 200,
-        responsive: true
-      });
-    }
-
-    if (window.innerWidth > 375 && window.innerWidth <= 414) {
-      $.stellar({
-        horizontalOffset: 1200,
-        verticalOffset: 30,
-        responsive: true
-      });
-    }
-
-    if (window.innerWidth > 320 && window.innerWidth <= 375) {
-      $.stellar({
-        horizontalOffset: 1100,
-        verticalOffset: -30,
-        responsive: true
-      });
-    }
-
-    if (window.innerWidth <= 320) {
-      $.stellar({
-        horizontalOffset: 950,
-        verticalOffset: -100
-      });
-    }
+var isMobile = {
+  Android: function() {
+    return navigator.userAgent.match(/Android/i);
+  },
+  BlackBerry: function() {
+    return navigator.userAgent.match(/BlackBerry/i);
+  },
+  iOS: function() {
+    return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+  },
+  Opera: function() {
+    return navigator.userAgent.match(/Opera Mini/i);
+  },
+  Windows: function() {
+    return navigator.userAgent.match(/IEMobile/i);
+  },
+  any: function() {
+    return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
   }
-});
+};
+
+if( !isMobile.any() ) {
+  $(function () {
+    if (educationElement) {
+      if (window.innerWidth > 1024) {
+        $.stellar({
+          horizontalOffset: 350,
+          verticalOffset: -28,
+          responsive: true
+        });
+      }
+      if (window.innerWidth > 768 && window.innerWidth <= 1024) {
+        $.stellar({
+          horizontalOffset: 2000,
+          verticalOffset: 900,
+          responsive: true
+        });
+      }
+      if (window.innerWidth > 414 && window.innerWidth <= 768) {
+        $.stellar({
+          horizontalOffset: 1500,
+          verticalOffset: 200,
+          responsive: true
+        });
+      }
+
+      if (window.innerWidth > 375 && window.innerWidth <= 414) {
+        $.stellar({
+          horizontalOffset: 1200,
+          verticalOffset: 30,
+          responsive: true
+        });
+      }
+
+      if (window.innerWidth > 320 && window.innerWidth <= 375) {
+        $.stellar({
+          horizontalOffset: 1100,
+          verticalOffset: -30,
+          responsive: true
+        });
+      }
+
+      if (window.innerWidth <= 320) {
+        $.stellar({
+          horizontalOffset: 950,
+          verticalOffset: -100
+        });
+      }
+    }
+  });
+}
+
 
 $("#mobile-menu").on("click", function () {
   $(this).toggleClass("active");

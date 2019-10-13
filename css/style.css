@@ -1089,6 +1089,20 @@ footer p {
   width: 100%;
 }
 
+@media screen and (max-width: 1024px) {
+  .about-img{
+    background-position-x: -860px;
+    -ms-background-position-x: -860px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-img{
+    background-position-x: -660px;
+    -ms-background-position-x: -660px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   header nav ul {
     display: none;
@@ -1261,6 +1275,13 @@ footer p {
   }
 }
 
+@media screen and (max-width: 414px) {
+  .about-img{
+    background-position-x: -610px;
+    -ms-background-position-x: -610px;
+  }
+}
+
 @media screen and (max-width: 448px) {
   .heading_content h2, .education h2, .skills h2, .interests h2{
     font-size: 50px;
@@ -1278,7 +1299,7 @@ footer p {
   }
 }
 
-@media screen and (max-width: 374px) {
+@media screen and (max-width: 375px) {
   .about-img{
     background-position-x: -543px;
     -ms-background-position-x: -543px;
@@ -1288,6 +1309,13 @@ footer p {
 @media screen and (max-width: 374px) {
   .contact .heading_content h2{
     font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .about-img{
+    background-position-x: -470px;
+    -ms-background-position-x: -470px;
   }
 }
 
