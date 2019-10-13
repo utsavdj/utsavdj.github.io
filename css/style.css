@@ -1091,15 +1091,13 @@ footer p {
 
 @media screen and (max-width: 1024px) {
   .about-img{
-    background-position-x: -860px;
-    -ms-background-position-x: -860px;
+    background-position: -860px center;
   }
 }
 
 @media screen and (max-width: 768px) {
   .about-img{
-    background-position-x: -660px;
-    -ms-background-position-x: -660px;
+    background-position: -660px center;
   }
 }
 
@@ -1277,8 +1275,7 @@ footer p {
 
 @media screen and (max-width: 414px) {
   .about-img{
-    background-position-x: -610px;
-    -ms-background-position-x: -610px;
+    background-position: -610px center;
   }
 }
 
@@ -1301,8 +1298,7 @@ footer p {
 
 @media screen and (max-width: 375px) {
   .about-img{
-    background-position-x: -543px;
-    -ms-background-position-x: -543px;
+    background-position: -543px center;
   }
 }
 
@@ -1314,8 +1310,7 @@ footer p {
 
 @media screen and (max-width: 320px) {
   .about-img{
-    background-position-x: -470px;
-    -ms-background-position-x: -470px;
+    background-position: -470px center;
   }
 }
 
