@@ -1089,17 +1089,17 @@ footer p {
   width: 100%;
 }
 
-@media screen and (max-width: 1024px) {
-  .about-img{
-    background-position: -860px center;
-  }
-}
+/*@media screen and (max-width: 1024px) {*/
+  /*.about-img{*/
+    /*background-position: -860px center;*/
+  /*}*/
+/*}*/
 
-@media screen and (max-width: 768px) {
-  .about-img{
-    background-position: -660px center;
-  }
-}
+/*@media screen and (max-width: 768px) {*/
+  /*.about-img{*/
+    /*background-position: -660px center;*/
+  /*}*/
+/*}*/
 
 @media screen and (max-width: 767px) {
   header nav ul {
@@ -1273,11 +1273,11 @@ footer p {
   }
 }
 
-@media screen and (max-width: 414px) {
-  .about-img{
-    background-position: -610px center;
-  }
-}
+/*@media screen and (max-width: 414px) {*/
+  /*.about-img{*/
+    /*background-position: -610px center;*/
+  /*}*/
+/*}*/
 
 @media screen and (max-width: 448px) {
   .heading_content h2, .education h2, .skills h2, .interests h2{
@@ -1296,11 +1296,11 @@ footer p {
   }
 }
 
-@media screen and (max-width: 375px) {
-  .about-img{
-    background-position: -543px center;
-  }
-}
+/*@media screen and (max-width: 375px) {*/
+  /*.about-img{*/
+    /*background-position: -543px center;*/
+  /*}*/
+/*}*/
 
 @media screen and (max-width: 374px) {
   .contact .heading_content h2{
