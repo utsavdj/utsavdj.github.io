@@ -1134,11 +1134,16 @@ footer p {
     text-decoration: none;
     font-size: 13px;
     line-height: 15px;
-    padding-bottom: 2px;
+    padding: 8px 15px;
+    border-bottom: none;
+    display: block;
+  }
+
+  header nav ul .active a{
+    border-bottom: none;
   }
 
   .mobile-dropdown-content li {
-    padding: 8px 15px;
     border-bottom: 1px solid #757575;
   }
 
@@ -1219,9 +1224,9 @@ footer p {
     margin-bottom: 7px;
   }
 
-  #full-border {
-    border-top: 1px solid #757575;
-  }
+  /*#full-border {*/
+    /*border-top: 1px solid #757575;*/
+  /*}*/
 
   .inner-dropdown {
     padding: 0 15px;
