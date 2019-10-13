@@ -1155,7 +1155,7 @@ footer p {
   }
 
   header nav ul .dropdown li {
-    border-bottom: 0px;
+    border-bottom: 0;
   }
 
   .dropdown-content {
@@ -1174,8 +1174,8 @@ footer p {
     position: relative;
     background-color: inherit;
     margin-top: inherit;
-    border-left: 0px solid #333;
-    margin-left: 0px;
+    border-left: 0 solid #333;
+    margin-left: 0;
   }
 
   .inner-dropdown-content a {
@@ -1203,7 +1203,7 @@ footer p {
   }
 
   .final-item .border {
-    border-bottom: 0px;
+    border-bottom: 0;
     margin-bottom: 7px;
   }
 
@@ -1212,11 +1212,11 @@ footer p {
   }
 
   .inner-dropdown {
-    padding: 0px 15px;
+    padding: 0 15px;
   }
 
   .dropdown li {
-    padding-bottom: 0px;
+    padding-bottom: 0;
   }
 
   .dropdown-content a {
@@ -1237,7 +1237,7 @@ footer p {
   }
 
   .move {
-    padding-top: 422px;
+    padding-top: 172px;
   }
 
   .height {
@@ -1258,6 +1258,12 @@ footer p {
   .height {
     height: 240px;
     overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 448px) {
+  .heading_content h2, .education h2, .skills h2, .interests h2{
+    font-size: 60px;
   }
 }
 
