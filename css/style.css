@@ -1279,6 +1279,13 @@ footer p {
 }
 
 @media screen and (max-width: 374px) {
+  .about-img{
+    background-position-x: -543px;
+    -ms-background-position-x: -543px;
+  }
+}
+
+@media screen and (max-width: 374px) {
   .contact .heading_content h2{
     font-size: 32px;
   }
