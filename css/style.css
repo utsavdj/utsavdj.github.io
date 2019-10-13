@@ -602,7 +602,7 @@ footer p {
   background-image: url(../images/utsav.png);
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   width: 100%;
 }
 
@@ -1089,17 +1089,17 @@ footer p {
   width: 100%;
 }
 
-/*@media screen and (max-width: 1024px) {*/
-  /*.about-img{*/
-    /*background-position: -860px center;*/
-  /*}*/
-/*}*/
+@media screen and (max-width: 1024px) {
+  .about-img{
+    background-position: -860px center;
+  }
+}
 
-/*@media screen and (max-width: 768px) {*/
-  /*.about-img{*/
-    /*background-position: -660px center;*/
-  /*}*/
-/*}*/
+@media screen and (max-width: 768px) {
+  .about-img{
+    background-position: -660px center;
+  }
+}
 
 @media screen and (max-width: 767px) {
   header nav ul {
@@ -1132,9 +1132,9 @@ footer p {
   .mobile-dropdown-content a {
     position: relative;
     text-decoration: none;
-    font-size: 13px;
+    font-size: 16px;
     line-height: 15px;
-    padding: 8px 15px;
+    padding: 12px 15px;
     border-bottom: none;
     display: block;
   }
@@ -1224,10 +1224,6 @@ footer p {
     margin-bottom: 7px;
   }
 
-  /*#full-border {*/
-    /*border-top: 1px solid #757575;*/
-  /*}*/
-
   .inner-dropdown {
     padding: 0 15px;
   }
@@ -1278,11 +1274,11 @@ footer p {
   }
 }
 
-/*@media screen and (max-width: 414px) {*/
-  /*.about-img{*/
-    /*background-position: -610px center;*/
-  /*}*/
-/*}*/
+@media screen and (max-width: 414px) {
+  .about-img{
+    background-position: -610px center;
+  }
+}
 
 @media screen and (max-width: 448px) {
   .heading_content h2, .education h2, .skills h2, .interests h2{
@@ -1301,11 +1297,11 @@ footer p {
   }
 }
 
-/*@media screen and (max-width: 375px) {*/
-  /*.about-img{*/
-    /*background-position: -543px center;*/
-  /*}*/
-/*}*/
+@media screen and (max-width: 375px) {
+  .about-img{
+    background-position: -543px center;
+  }
+}
 
 @media screen and (max-width: 374px) {
   .contact .heading_content h2{
