@@ -1265,12 +1265,22 @@ footer p {
   .heading_content h2, .education h2, .skills h2, .interests h2{
     font-size: 50px;
   }
+
+  .contact .heading_content h2{
+    font-size: 38px;
+  }
 }
 
 @media screen and (max-width: 377px) {
   .height {
     height: 200px;
     overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .contact .heading_content h2{
+    font-size: 32px;
   }
 }
 

@@ -125,23 +125,47 @@ $(document).ready(function () {
 
 $(function () {
   if(educationElement) {
-    $.stellar({
-      horizontalOffset: 350,
-      verticalOffset: -28
-    });
-  }
-});
-
-if(educationElement) {
-  window.onresize = function () {
-    if (window.innerWidth < 414) {
+    if (window.innerWidth > 1024) {
       $.stellar({
         horizontalOffset: 350,
-        verticalOffset: -548.5
+        verticalOffset: -28
       });
     }
-  };
-}
+    if (window.innerWidth > 768 && window.innerWidth <= 1024) {
+      $.stellar({
+        horizontalOffset: 2000,
+        verticalOffset: 900
+      });
+    }
+    if (window.innerWidth > 414 && window.innerWidth <= 768) {
+      $.stellar({
+        horizontalOffset: 1500,
+        verticalOffset: 200
+      });
+    }
+
+    if (window.innerWidth > 375 && window.innerWidth <= 414) {
+      $.stellar({
+        horizontalOffset: 1200,
+        verticalOffset: 30
+      });
+    }
+
+    if (window.innerWidth > 320 && window.innerWidth <= 375) {
+      $.stellar({
+        horizontalOffset: 1100,
+        verticalOffset: -30
+      });
+    }
+
+    if (window.innerWidth <= 320) {
+      $.stellar({
+        horizontalOffset: 950,
+        verticalOffset: -100
+      });
+    }
+  }
+});
 
 $("#mobile-menu").on("click", function () {
   $(this).toggleClass("active");
