@@ -2,6 +2,11 @@ document.getElementById('copyright-year').innerText = new Date().getFullYear().t
 
 var education = [
   {
+    institution: 'University of Waikato, Hamilton, Waikato, New Zealand',
+    degree: 'Graduate Diploma in Computer Science, Emphasis: Software Development',
+    date: 'Jan 2020 - Present'
+  },
+  {
     institution: 'Kathmandu College of Management (KCM), Kathmandu, Nepal',
     degree: 'Bachelors in Business Administration (BBA), Emphasis: Finance',
     date: 'Aug 2011 - Dec 2015'
@@ -24,10 +29,10 @@ if(educationElement){
   var educationDetail = educationElement.getElementsByClassName('details')[0];
   for (var i = 0; i < education.length; i++){
     var educationDetailElement = document.createElement('div');
-    educationDetailElement.classList.add('col-md-4');
+    educationDetailElement.classList.add('col-md-3');
     educationDetail.appendChild(educationDetailElement);
 
-    var parentElement = educationDetail.getElementsByClassName('col-md-4')[i];
+    var parentElement = educationDetail.getElementsByClassName('col-md-3')[i];
 
     var institution = document.createElement('strong');
     institution.innerText = education[i].institution;
