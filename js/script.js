@@ -4,23 +4,13 @@ var education = [
   {
     institution: 'University of Waikato, Hamilton, Waikato, New Zealand',
     degree: 'Graduate Diploma in Computer Science, Emphasis: Software Development',
-    date: 'Jan 2020 - Present'
+      date: 'Jan 2020 - Nov 2020'
   },
   {
     institution: 'Kathmandu College of Management (KCM), Kathmandu, Nepal',
     degree: 'Bachelors in Business Administration (BBA), Emphasis: Finance',
     date: 'Aug 2011 - Dec 2015'
   },
-  {
-    institution: 'United Academy, Lalitpur, Nepal',
-    degree: 'Higher Secondary Education Board (HSEB), Commerce',
-    date: 'Sept 2008 - Nov 2010'
-  },
-  {
-    institution: 'D.A.V. School, Lalitpur, Nepal',
-    degree: 'School Leaving Certificate (SLC)',
-    date: 'June 2008'
-  }
 ];
 
 var educationElement = document.getElementsByClassName('education')[0];
@@ -29,10 +19,10 @@ if(educationElement){
   var educationDetail = educationElement.getElementsByClassName('details')[0];
   for (var i = 0; i < education.length; i++){
     var educationDetailElement = document.createElement('div');
-    educationDetailElement.classList.add('col-md-3');
+    educationDetailElement.classList.add('col-md-6');
     educationDetail.appendChild(educationDetailElement);
 
-    var parentElement = educationDetail.getElementsByClassName('col-md-3')[i];
+    var parentElement = educationDetail.getElementsByClassName('col-md-6')[i];
 
     var institution = document.createElement('strong');
     institution.innerText = education[i].institution;

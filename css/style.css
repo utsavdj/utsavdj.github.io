@@ -219,8 +219,7 @@ header nav ul .active a {
   -o-transform: translateY(-7px) rotateZ(45deg);
 }
 
-.heading_content h2, .education h2, .skills h2, .interests h2, .experience h2, .organizational-involvements h2,
-.research h2, .achievement h2{
+.heading_content h2{
   font-size: 74px;
   font-weight: 900;
   line-height: 80px;
@@ -228,8 +227,7 @@ header nav ul .active a {
   z-index: -1;
 }
 
-.heading_content .col-md-7, .education, .skills, .interests, .experience, .organizational-involvements, .research,
-.achievement{
+.heading_content .col-md-7{
   margin-top: 40px;
 }
 
@@ -237,20 +235,17 @@ header nav ul .active a {
   margin-top: 40px;
 }
 
-.education .border, .skills .border, .interests .border, .experience .border, .organizational-involvements .border,
-, .research .border, .achievement .border{
+.education .border{
   width: 50px;
   margin: 30px 0 20px 0;
 }
 
-.education .details .col-md-4, .skills .details li, .interests .details li, .experience .details li,
-.organizational-involvements .details li, .research .details li, .achievement .details li{
+.education .details .col-md-4{
   margin-top: 10px;
 }
 
-.skills .details, .interests .details, .experience .details, .organizational-involvements .details,
-.research .details, .achievement .details{
-  padding-left: 15px;
+.education {
+  margin-bottom: 40px;
 }
 
 .unique_color {
