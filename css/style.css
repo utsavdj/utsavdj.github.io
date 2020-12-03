@@ -272,6 +272,7 @@ header nav ul .active a {
 .mid-nav {
   list-style-type: none;
   padding-left: 0px;
+  margin: 15px 0px;
 }
 
 .mid-nav li {
